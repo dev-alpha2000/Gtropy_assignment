@@ -191,3 +191,7 @@ int main()
 
     return 0;
 }
+
+// Complexities: 
+// Time complexity: Time Complexity: O(N * M), where M is the maximum length of the string
+// Space complexity: O(N * 256)
