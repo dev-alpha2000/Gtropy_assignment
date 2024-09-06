@@ -6,15 +6,22 @@ You have to design a dictionary Data structure, where any word when entered, it 
 <hr>
 
 **Solution**  
-Solving this problem involves utilizing a Trie data structure. The strategy is to iterate through the array of strings, str[], and insert each string into the Trie. Each node of the Trie contains a character of the string and a boolean value indicating whether it is the last character of the string. To address the problem, we do these steps:
+This project implements a Dictionary using the Trie (Prefix Tree) data structure in C++. It allows users to efficiently store and search for words, offering fast lookups for words in a large dataset. When a word is entered, the program searches for it in the dictionary and returns the relevant word if found.
 
-* Initialize a Trie, denoted as root, where each node includes a character of a string and a boolean value indicating whether the character is the last character of the string.
+Features
+Insert Word: Add words to the dictionary.
+Search Word: Efficiently search for any word in the dictionary.
+Auto-complete Suggestions: (Optional) Provide suggestions based on a prefix.
+Prefix Matching: Return all words that share a common prefix.
+Efficient Lookup: Fast word search with an average time complexity of O(L), where L is the length of the word.
 
-* Traverse the array of strings, arr[], and insert all the strings into the Trie.
+Trie Data Structure
+A Trie is a tree-like data structure used for efficiently storing and searching strings. In this project, each node of the Trie represents a single character of a word. The main operations provided by the Trie are:
 
-* Finally, traverse the string key. For each ith character, check if the character is present in the Trie. If it is, move to the next node of the Trie.
-
-* If the character is not found, print all possible strings whose prefix matches the string key.
+Insert: Adds a new word to the Trie.
+Search: Checks if a word exists in the Trie.
+Prefix Matching: Finds all words that share a given prefix.
+Auto-complete Suggestions: (Optional) Returns suggestions for words based on a prefix.
 
   <hr>
 
